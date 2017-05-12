@@ -1,0 +1,30 @@
+uuid: 8db34a8a-a573-41b1-951d-e4e25477a789
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_cover
+field_name: field_cover
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 0723fd86-30b2-42ab-865a-8514076184fc
+    alt: ''
+    title: ''
+    width: 80
+    height: 80
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

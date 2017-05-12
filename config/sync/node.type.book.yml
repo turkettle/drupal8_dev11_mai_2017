@@ -1,0 +1,17 @@
+uuid: 0493cf8a-5d03-44b8-9636-607052e6d701
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Livre
+type: book
+description: 'Specific to the Book contents.'
+help: 'Please see <a href="https://bibliotheques.paris.fr">this site</a> for help.'
+new_revision: true
+preview_mode: 0
+display_submitted: false

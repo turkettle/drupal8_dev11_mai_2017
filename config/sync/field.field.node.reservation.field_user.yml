@@ -1,0 +1,28 @@
+uuid: f8c7f8e9-0560-4b9d-b83d-29f2e7aa6adc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.reservation
+id: node.reservation.field_user
+field_name: field_user
+entity_type: node
+bundle: reservation
+label: Membre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

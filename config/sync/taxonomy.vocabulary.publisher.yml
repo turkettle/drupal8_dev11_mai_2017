@@ -1,0 +1,9 @@
+uuid: 443f9112-8913-4244-bab8-3da873870d85
+langcode: en
+status: true
+dependencies: {  }
+name: 'Maison d''Edition'
+vid: publisher
+description: ''
+hierarchy: 0
+weight: 0

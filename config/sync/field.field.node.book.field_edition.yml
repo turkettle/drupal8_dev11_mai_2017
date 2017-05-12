@@ -1,0 +1,21 @@
+uuid: ad1ac769-facf-440b-b661-2b3575f8c7a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edition
+    - node.type.book
+  module:
+    - datetime
+id: node.book.field_edition
+field_name: field_edition
+entity_type: node
+bundle: book
+label: 'Date d''Edition'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

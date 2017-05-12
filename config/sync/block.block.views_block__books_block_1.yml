@@ -1,0 +1,24 @@
+uuid: 7a093bc6-6479-4888-9caa-2ea89a33a2f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.books
+  module:
+    - views
+  theme:
+    - as_bootstrap
+id: views_block__books_block_1
+theme: as_bootstrap
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:books-block_1'
+settings:
+  id: 'views_block:books-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

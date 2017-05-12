@@ -1,0 +1,21 @@
+uuid: df31a856-05e3-4c5e-858e-4500322f6240
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_birth
+    - taxonomy.vocabulary.author
+  module:
+    - datetime
+id: taxonomy_term.author.field_birth
+field_name: field_birth
+entity_type: taxonomy_term
+bundle: author
+label: 'Date de naissance'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

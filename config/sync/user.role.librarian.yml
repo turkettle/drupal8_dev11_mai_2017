@@ -1,0 +1,26 @@
+uuid: 248836b4-1b94-4c75-828b-a9722ada9e47
+langcode: en
+status: true
+dependencies: {  }
+id: librarian
+label: Bibliothécaire
+weight: -8
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer taxonomy'
+  - 'create book content'
+  - 'create reservation content'
+  - 'edit any book content'
+  - 'edit any reservation content'
+  - 'edit terms in author'
+  - 'edit terms in publisher'
+  - 'revert book revisions'
+  - 'revert reservation revisions'
+  - 'view all revisions'
+  - 'view book revisions'
+  - 'view own unpublished content'
+  - 'view reservation revisions'
+  - 'view the administration theme'

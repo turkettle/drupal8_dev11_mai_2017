@@ -1,0 +1,27 @@
+uuid: 13b6737f-7d53-43ce-9c8d-2555dbdfd10c
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_cv
+  module:
+    - file
+id: contact_message.feedback.field_cv
+field_name: field_cv
+entity_type: contact_message
+bundle: feedback
+label: CV
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: contact_message.feedback.field_cv
+  file_extensions: 'doc docx pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

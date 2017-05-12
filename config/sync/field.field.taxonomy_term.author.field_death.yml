@@ -1,0 +1,21 @@
+uuid: 6a0bc66e-0298-4f74-ba01-e46507657223
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_death
+    - taxonomy.vocabulary.author
+  module:
+    - datetime
+id: taxonomy_term.author.field_death
+field_name: field_death
+entity_type: taxonomy_term
+bundle: author
+label: 'Date de décès'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,43 @@
+uuid: 1266d430-fa8e-4f89-83f2-4eb3bc23bc97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.author.field_birth
+    - field.field.taxonomy_term.author.field_death
+    - taxonomy.vocabulary.author
+  module:
+    - datetime
+    - text
+id: taxonomy_term.author.default
+targetEntityType: taxonomy_term
+bundle: author
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_birth:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_death:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  langcode: true

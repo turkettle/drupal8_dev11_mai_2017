@@ -1,0 +1,12 @@
+uuid: c42fe870-51d0-47f2-8024-b041bfab1503
+langcode: fr
+status: true
+dependencies: {  }
+name: medium_large
+label: 'Medium large'
+effects:
+  1b04a9eb-51a8-485c-b04f-4deda6dee3b3:
+    uuid: 1b04a9eb-51a8-485c-b04f-4deda6dee3b3
+    id: image_desaturate
+    weight: 1
+    data: {  }

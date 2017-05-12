@@ -1,0 +1,28 @@
+uuid: 8a99c21e-c8f7-4a82-8502-b3305cb6d7c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book
+    - node.type.book
+    - node.type.reservation
+id: node.reservation.field_book
+field_name: field_book
+entity_type: node
+bundle: reservation
+label: Livre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      book: book
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
