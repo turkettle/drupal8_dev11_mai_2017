@@ -1,9 +1,8 @@
 
-as_book.book_reservation_form:
-  path: '/as_book/form/book_reservation'
+as_book.default_controller_bookReservationAjax:
+  path: '/book/ajax/{book_id}/{user_id}/{mode}'
   defaults:
-    _form: '\Drupal\as_book\Form\BookReservationForm'
-    _title: 'BookReservationForm'
+    _controller: '\Drupal\as_book\Controller\DefaultController::bookReservationAjax'
+    _title: 'Book reservation'
   requirements:
-    _access: 'TRUE'
-  
+    _permission: 'access content'

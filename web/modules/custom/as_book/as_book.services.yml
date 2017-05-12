@@ -1,0 +1,5 @@
+services:
+  reservation.handler:
+    class: Drupal\as_book\reservationHandlerService
+    arguments: ['@entity_type.manager']
+

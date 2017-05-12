@@ -1,0 +1,28 @@
+uuid: 1341d48b-6a3c-4326-8ff7-fe655e2a9ece
+langcode: fr
+status: true
+dependencies:
+  module:
+    - as_book
+    - node
+  theme:
+    - as_bootstrap
+id: book_reservation_block
+theme: as_bootstrap
+region: sidebar_second
+weight: -7
+provider: null
+plugin: book_reservation_block
+settings:
+  id: broken
+  label: 'Book reservation block'
+  provider: as_book
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      book: book
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
