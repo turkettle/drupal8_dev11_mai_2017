@@ -1,0 +1,7 @@
+name: Book
+type: module
+description: Provide the website with a Book application.
+core: 8.x
+package: Best Bibliotheque
+dependencies:
+  - node

@@ -1,0 +1,9 @@
+
+as_book.book_reservation_form:
+  path: '/as_book/form/book_reservation'
+  defaults:
+    _form: '\Drupal\as_book\Form\BookReservationForm'
+    _title: 'BookReservationForm'
+  requirements:
+    _access: 'TRUE'
+  
