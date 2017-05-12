@@ -1,0 +1,8 @@
+{% set book_id = elements['#book_id'] %}
+{% set user_id = elements['#user_id'] %}
+
+<a href="/book/ajax/{{ book_id }}/{{ user_id }}/nojs"
+   class="use-ajax btn btn-primary"
+   id="bookReservationButton">
+    Réservez ce livre
+</a>

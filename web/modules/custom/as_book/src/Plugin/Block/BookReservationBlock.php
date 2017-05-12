@@ -85,26 +85,12 @@ class BookReservationBlock extends BlockBase implements ContainerFactoryPluginIn
         $book = $this->requestStack
             ->getCurrentRequest()
             ->get('node');
-        $user_id = $this->currentUser->id();
-        $route_name = 'as_book.default_controller_bookReservationAjax';
-        $route_parameters = [
-            'book_id' => $book->id(),
-            'user_id' => $user_id,
-            'mode' => 'nojs',
-        ];
-        $options = [
-            'attributes' => [
-                'id' => 'bookReservationButton',
-                'class' => ['use-ajax','btn','btn-primary'],
-            ],
-        ];
-        $url = \Drupal\Core\Url::fromRoute($route_name, $route_parameters, $options);
 
-        $build = [];
+        //  Affichage via le fichier de template.
         $build['book_reservation_block'] = [
-            '#title' => $this->t('Réserver ce livre'),
-            '#type' => 'link',
-            '#url' => $url,
+            '#theme' => 'reservation_link',
+            '#book_id' => $book->id(),
+            '#user_id' => $this->currentUser->id(),
         ];
 
         return $build;
